@@ -1,0 +1,24 @@
+// Bootstrap fuctions - Do not change anything in here
+@import '~bootstrap/scss/functions';
+// Bootstrap mixins - Do not change anything in here
+@import '~bootstrap/scss/mixins';
+// Framework SASS Variables - Go here to override Bootstrap vars
+@import 'abstracts/sass-variables';
+//Bootstrap SASS Vars - Do not change anything in here
+@import '~bootstrap/scss/variables';
+// Framework SASS Map Amends - Go here to override  Bootstrap SASS Map
+@import 'abstracts/map-amends';
+// Framework mixins
+@import 'abstracts/mixins';
+// Framework utilities - needs to be imported before main bootstrap file.
+@import 'utilities/utilities';
+// Bootstrap Core  - Do not change anything in here
+@import '~bootstrap/scss/bootstrap';
+// Framework Custom Properties (CSS Variables)
+@import 'abstracts/css-vars';
+// Framework base
+@import 'base/base';
+// Framework Components
+@import 'components/components';
+// Framework Vendor Overrides
+@import 'vendors/vendors';

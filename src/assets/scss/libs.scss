@@ -1,0 +1,8 @@
+// AOS (Animation on scroll lib)
+//@import '~aos/dist/aos.css';
+$aos-distance: 20px; // It has to be above import
+@import '~aos/src/sass/aos.scss';
+
+//Swiper
+@import '~swiper/swiper-bundle.min.css';
+
