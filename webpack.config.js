@@ -28,7 +28,7 @@ const paths = {
     scss: "./src/assets/scss",
     fonts: "./src/assets/fonts",
     js: "./src/assets/js",
-    favicon: "./src/assets/favicon",
+    favicon: "./src/assets/images/favicon",
   },
   dist: {
     imgs: "./assets/images",
