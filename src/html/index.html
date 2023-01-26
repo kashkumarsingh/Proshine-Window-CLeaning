@@ -1,48 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-{{> header/head title="Homepage"}}
-
+{{>(config config.partials.head) title=config.defaultPageTitle}}
 <body>
     <!-- Navbar -->
-    {{> header/navbar}}
+    {{> header/navbar configClassList=config.classes.navbar classList=""}}
     <!-- Main Content -->
-    <main id="role" role="main">
-        <div class="home-slider">
-            <!-- Slider main container -->
-            <div class="swiper" data-swiper='{
-                "navigation":{"nextEl":".swiper-button-next","prevEl":".swiper-button-prev", "pagination":{"el":".swiper-pagination", "type":"bullets"}}
-            }'>
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide"><img src="https://via.placeholder.com/1200x480?Text=Slide1" alt="slide1">
-                    </div>
-                    <div class="swiper-slide"><img src="https://via.placeholder.com/1200x480?Text=Slide2" alt="slide2">
-                    </div>
-                    <div class="swiper-slide"><img src="https://via.placeholder.com/1200x480?Text=Slide3" alt="slide3">
-                    </div>
-                </div>
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
-
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-
-                <!-- If we need scrollbar -->
-                <!-- <div class="swiper-scrollbar"></div> -->
-            </div>
-        </div>
-        <!-- Home Slider -->
-        <section class="about" id="about">
-            <div class="container">
-                Here goes content
-            </div>
-        </section>
+    <main id="role" role="main" class="{{config.classes.content}}">
+      <div class="container">
+         <section id="section" class="section-here p-120" style="padding:80px 0;"> 
+            <p>Main Content Goes here</p>
+         </section>
+      </div>
     </main>
     <!-- /Main Content -->
     <!-- Footer -->
     {{> footer/footer }}
+
+    <!-- Theme JS -->
+    {{> footer/scripts }}
 </body>
 
 </html>

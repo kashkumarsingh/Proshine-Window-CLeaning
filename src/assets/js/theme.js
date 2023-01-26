@@ -1,3 +1,5 @@
+//Fontawesome
+import '@fortawesome/fontawesome-free/js/all.js'
 //Bootstrap JS
 import 'bootstrap';
 

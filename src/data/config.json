@@ -1,0 +1,18 @@
+{
+    "defaultPageTitle": "ProShine Window Cleaning",
+    "templateName": "HTML5 Bootstrap",
+    "classes": {
+        "body": "",
+        "navbar": "",
+        "content": "",
+        "footer": ""
+    },
+    "partials": {
+        "head": "header/head",
+        "navbar": "navbar/navbar-primary",
+        "footer": "footer/footer"
+    },
+    "defaultImgAlt": "ProShine Window Cleaning",
+    "helpDocsURL": "",
+    "demoURL": ""
+}

@@ -1,0 +1,22 @@
+:root {
+    /* Bootstrap vars */
+    --bs-font-sans-serif: 'Montserrat', sans-serif;
+
+    .btn-outline-secondary {
+        --bs-btn-color: #fff;
+        --bs-btn-border-color: #fff;
+        --bs-btn-hover-color: #000;
+        --bs-btn-hover-bg: #eeb738;
+        --bs-btn-hover-border-color: #eeb738;
+        --bs-btn-focus-shadow-rgb: 238,183,56;
+        --bs-btn-active-color: #000;
+        --bs-btn-active-bg: #eeb738;
+        --bs-btn-active-border-color: #eeb738;
+        --bs-btn-active-shadow: none;
+        --bs-btn-disabled-color: #eeb738;
+        --bs-btn-disabled-bg: transparent;
+        --bs-btn-disabled-border-color: #eeb738;
+        --bs-gradient: none;
+        text-transform: uppercase;
+    }
+}

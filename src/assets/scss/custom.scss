@@ -1,0 +1,80 @@
+.site-navbar {
+    .nav-item {
+        margin-right: 16px;
+
+        .nav-link {
+            text-transform: uppercase;
+            color: #fff;
+        }
+    }
+}
+
+.site-navigation {
+    @include flexbox();
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    flex-flow: row nowrap;
+}
+
+.footer {
+    position: relative;
+    background-color: $blue;
+    padding: $padding-80;
+    color: $white;
+    .footer__about{
+        >div{
+            margin-bottom:30px;
+            >p{
+                margin:0;
+            }
+        }
+        .footer-about__description{
+            p{
+                span{
+                    font-family: $secondary-font-family;
+                }
+                a{
+                    color:$orange;
+                }
+            }
+        }
+        .footer-about__social{
+            .social-lists{
+                @include flexbox();
+                flex-flow: row nowrap;
+                gap:5px;
+                align-items: center;
+                justify-content: flex-start;
+                li{
+                    a{
+                        padding:0;
+                        width:47px;
+                        height: 47px;
+                        color:$white;
+                        background:$orange;
+                        display: block;
+                        line-height: 47px;
+                        text-align: center;
+                        border: 0px solid $orange;
+                        border-radius: 50%;
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+// `xl` applies to large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+    .site-brand {
+        .navbar-brand {
+            img {
+                width: 180px;
+                height: auto;
+            }
+        }
+    }
+}

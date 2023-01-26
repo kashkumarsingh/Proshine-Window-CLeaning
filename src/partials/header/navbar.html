@@ -1,43 +1,86 @@
+<!-- Header -->
 <header id="header" class="header">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                    </li>
-                </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+    <div class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <div class="site-brand navbar-dark">
+                <a href="#" class="navbar-brand">
+                    <img src="{{webRoot}}/assets/images/logo_proshine.png" class="img-fluid"
+                        alt="{{config.defaultImgAlt}}">
+                </a>
             </div>
+            <!-- /Site brand -->
+            <div class="site-navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#siteNavigation"
+                    aria-controls="siteNavigationLabel">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- /Navbar Toggle -->
+                <nav class="navbar site-navbar">
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="siteNavigation"
+                        aria-labelledby="siteNavigationLabel">
+                        <div class="offcanvas-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav d-flex align-items-center justify-content-evenly">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <!-- /home -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">About Us</a>
+                                </li>
+                                <!-- /about -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Services</a>
+                                </li>
+                                <!-- /services -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Reviews</a>
+                                </li>
+                                <!-- /reviews -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Blog</a>
+                                </li>
+                                <!-- /blog -->
+                                <li class="nav-item">
+                                    <a href="#" class="btn btn-outline-secondary">Request a quote</a>
+                                </li>
+                                <!-- /request a quote -->
+                            </ul>
+                            <!--/Navigation -->
+                        </div>
+                    </div>
+                    <div class="search-container">
+                        <!-- <img src="{{webRoot}}/assets/images/search.svg" alt="Search"> -->
+                        <a class="button btn-search"  href="#siteSearch" role="button"
+                            aria-controls="siteSearch">
+                            <span class="fas fa-search"></span>
+                        </a>
+                        <!--/Search -->
+                        <!-- <div class="offcanvas offcanvas-top" tabindex="-1" id="siteSearch"
+                            aria-labelledby="siteSearch">
+                            <div class="offcanvas-header search-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <form class="d-flex">
+                                    <input class="form-control me-2" type="search" placeholder="Search"
+                                        aria-label="Search">
+                                    <button class="btn btn-outline-success" type="submit">Search</button>
+                                </form>
+                            </div>
+                        </div> -->
+                    </div>
+                    <!-- /Search -->
+                </nav>
+            </div>
+            <!-- /Site Navigation -->
         </div>
-    </nav>
+    </div>
+    </div>
+    <!-- /Navigation -->
 </header>
+<!-- /Header -->
