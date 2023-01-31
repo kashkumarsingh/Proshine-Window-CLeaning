@@ -1,3 +1,11 @@
+//Swiper scss customization
+$themeColor:#B87C34 !default;
+
+@at-root {
+    :root {
+        --swiper-theme-color: #{$themeColor};
+    }
+}
 .swiper {
     width: auto;
     // height: 640px;
@@ -7,4 +15,19 @@
         max-width: 100%;
         height: auto;
     }
+}
+
+.swiper-pagination-bullet {
+    width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 15px));
+    height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 15px));
+    background: var(--swiper-pagination-bullet-inactive-color, #D9D9D9);
+    opacity: var(--swiper-pagination-bullet-inactive-opacity, 1);
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--swiper-pagination-color, var(--swiper-theme-color));
+}
+
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 80px;
 }

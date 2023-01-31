@@ -1,0 +1,30 @@
+.site-navbar {
+    .nav-item {
+        margin-right: 16px;
+
+        .nav-link {
+            text-transform: uppercase;
+            color: #fff;
+        }
+    }
+}
+
+.site-navigation {
+    @include flexbox();
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    flex-flow: row nowrap;
+}
+
+// `xl` applies to large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+    .site-brand {
+        .navbar-brand {
+            img {
+                width: 180px;
+                height: auto;
+            }
+        }
+    }
+}

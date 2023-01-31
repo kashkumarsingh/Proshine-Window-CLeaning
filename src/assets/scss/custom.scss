@@ -1,80 +1,123 @@
-.site-navbar {
-    .nav-item {
-        margin-right: 16px;
+.about {
+    position: relative;
+    padding: 80px 0;
 
-        .nav-link {
-            text-transform: uppercase;
-            color: #fff;
+    .about-content {
+        text-align: center;
+
+        .about-content__inner {
+            width: 100%;
+            max-width: 842px;
+            margin: 0 auto;
+
+            .about-content__desc {
+                span {
+                    font-family: $secondary-font-family;
+                }
+            }
         }
+
     }
 }
 
-.site-navigation {
-    @include flexbox();
-    justify-content: space-between;
-    align-items: center;
-    gap: 16px;
-    flex-flow: row nowrap;
-}
-
-.footer {
+.hww {
     position: relative;
-    background-color: $blue;
-    padding: $padding-80;
-    color: $white;
-    .footer__about{
-        >div{
-            margin-bottom:30px;
-            >p{
-                margin:0;
-            }
-        }
-        .footer-about__description{
-            p{
-                span{
-                    font-family: $secondary-font-family;
-                }
-                a{
-                    color:$orange;
-                }
-            }
-        }
-        .footer-about__social{
-            .social-lists{
-                @include flexbox();
-                flex-flow: row nowrap;
-                gap:5px;
-                align-items: center;
-                justify-content: flex-start;
-                li{
-                    a{
-                        padding:0;
-                        width:47px;
-                        height: 47px;
-                        color:$white;
-                        background:$orange;
-                        display: block;
-                        line-height: 47px;
-                        text-align: center;
-                        border: 0px solid $orange;
-                        border-radius: 50%;
-                        font-size: 1.5rem;
+    padding: 80px 0;
+    text-align: center;
+
+    .section-heading {
+        margin-bottom: 32px;
+    }
+
+    .hww__steps {
+        .row {
+            div[class*=col-]:nth-child(3) {
+                .hww__steps-single {
+                    &::after {
+                        display: none;
                     }
                 }
             }
+        }
 
+    }
+
+    .hww__steps-single {
+        position: relative;
+        text-align: center;
+        margin-bottom: 64px;
+
+        &::after {
+            content: '';
+            background-image: url('../../assets/images/arrow_works.svg');
+            background-position: 50%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            right: -32%;
+            top: 40%;
+            @include translate(-50%, -50%);
+            width: 103px;
+            height: 103px;
+        }
+
+        .hww__steps-single-icon {
+            position: relative;
+            width: 216px;
+            height: 216px;
+            line-height: 216px;
+            border: 0px solid #000;
+            border-radius: 50%;
+            background-color: #EEF2F5;
+            margin: 0 auto 32px;
+
+            .hww__steps-count {
+                position: absolute;
+                width: 32px;
+                height: 32px;
+                background: #0C243C;
+                border: 0px solid #0C243C;
+                border-radius: 50%;
+                margin: 0 auto;
+                line-height: 32px;
+                color: #fff;
+                font-family: $secondary-font-family;
+                font-size: 1rem;
+                left: 50%;
+                bottom: 0;
+                @include translate(-50%, 50%);
+            }
+        }
+
+        .hww__steps-desc {
+            p {
+                width: calc(100% - 45%);
+                margin: 0 auto;
+            }
         }
     }
 }
 
-// `xl` applies to large devices (desktops, less than 1200px)
-@media (max-width: 1199.98px) {
-    .site-brand {
-        .navbar-brand {
-            img {
-                width: 180px;
-                height: auto;
-            }
-        }
+.reviews {
+    position: relative;
+    padding: 80px 0;
+    text-align: center;
+    background-color: #EEF2F5;
+
+    .section-heading {
+        margin-bottom: 48px;
+    }
+
+    .reviews__content {
+        position: relative;
+        max-width: calc(100% - 25.666667%);
+        width: 100%;
+        margin: 0 auto 40px;
+        text-align: center;
+        background-color: #fff;
+        box-shadow: 0 11px 32px 0 rgb(0 0 0 / 10%);
+        padding:32px 24px;
+        border:0px solid #fff;
+        border-radius: 8px;
     }
 }

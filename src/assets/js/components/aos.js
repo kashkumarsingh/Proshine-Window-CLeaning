@@ -4,7 +4,7 @@ import AOS from "aos";
   const options = {
     duration: 700,
     easing: "ease-out-quad",
-    once: true,
+    once: false,
     startEvent: "load",
     disable: "mobile",
   };

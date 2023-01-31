@@ -1,23 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 {{>(config config.partials.head) title=config.defaultPageTitle}}
-<body>
-    <!-- Navbar -->
-    {{> header/navbar configClassList=config.classes.navbar classList=""}}
-    <!-- Main Content -->
-    <main id="role" role="main" class="{{config.classes.content}}">
-      <div class="container">
-         <section id="section" class="section-here p-120" style="padding:80px 0;"> 
-            <p>Main Content Goes here</p>
-         </section>
-      </div>
-    </main>
-    <!-- /Main Content -->
-    <!-- Footer -->
-    {{> footer/footer }}
 
-    <!-- Theme JS -->
-    {{> footer/scripts }}
+<body>
+   <!-- Navbar -->
+   {{> header/navbar configClassList=config.classes.navbar classList=""}}
+   <!-- Main Content -->
+   <main id="role" role="main" class="{{config.classes.content}}">
+      <!-- Page Content Goes Here -->
+      <!-- Hero-->
+      {{> widgets/herohome }}
+      <!-- /Hero-->
+      <!-- About -->
+      {{> widgets/about}}
+      <!-- /About -->
+      <!-- How We Works -->
+      {{> widgets/howitworks}}
+      <!-- /How We Works -->
+      <!-- Reviews -->
+      {{> widgets/clientreviews}}
+      <!-- /Reviews -->
+   </main>
+   <!-- /Main Content -->
+   <!-- Footer -->
+   {{> footer/footer }}
+
+   <!-- Theme JS -->
+   {{> footer/scripts }}
 </body>
 
 </html>
