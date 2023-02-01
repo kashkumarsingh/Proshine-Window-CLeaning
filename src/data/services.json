@@ -1,0 +1,34 @@
+{
+    "entries":[
+        {
+            "img":"{{webRoot}}/assets/images/service-one.jpg",
+            "icon":"{{webRoot}}/assets/images/christmas-light.svg",
+            "title":"Christmas Lights",
+            "category": "installation"
+        },
+        {
+            "img":"{{webRoot}}/assets/images/service-two.jpg",
+            "icon":"{{webRoot}}/assets/images/window-cleaning.svg",
+            "title":"Window Cleaning",
+            "category": "cleaning"
+        },
+        {
+            "img":"{{webRoot}}/assets/images/service-three.jpg",
+            "icon":"{{webRoot}}/assets/images/gutter-cleaning.svg",
+            "title":"Gutter Cleaning",
+            "category": "cleaning"
+        },
+        {
+            "img":"{{webRoot}}/assets/images/service-three.jpg",
+            "icon":"{{webRoot}}/assets/images/gutter-cleaning.svg",
+            "title":"Gutter Cleaning",
+            "category": "cleaning"
+        },
+        {
+            "img":"{{webRoot}}/assets/images/service-three.jpg",
+            "icon":"{{webRoot}}/assets/images/gutter-cleaning.svg",
+            "title":"Gutter Cleaning",
+            "category": "cleaning"
+        }
+    ]
+}

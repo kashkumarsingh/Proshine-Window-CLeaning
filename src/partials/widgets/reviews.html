@@ -1,0 +1,44 @@
+<section id="reviews" class="reviews">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-12">
+                <div class="section-heading" data-aos="fade-right">
+                    <p>We provide best solutions to our clients</p>
+                    <h1>Our <span>ProShine</span> Client Reviews</h1>
+                </div>
+            </div>
+            <!-- /Section Heading-->
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-12">
+                <div class="reviews__content swiper"
+                    data-swiper='{"autoplay" : {"delay": 2500}, "loop": true,"pagination": {"el": ".swiper-pagination", "clickable":true}}'>
+                    <div class="swiper-wrapper">
+                        {{#each reviews.entries}}
+                        <div class="swiper-slide">
+                            <div class="reivews__content-single">
+                                <div class="reviews__icon">Icon here</div>
+                                <div class="reviews__text">
+                                    <p>{{quote}}</p>
+                                </div>
+                                <div class="reviews__author">
+                                    <p>{{name}}</p>
+                                </div>
+                                <div class="reviews__rating">
+                                    <p><input id="input-3" name="input-3" value={{rating}} class="rating-loading"></p>
+                                </div>
+                            </div>
+                        </div>
+                        {{/each}}
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <!-- <div class="swiper-button-prev"></div>
+                                   <div class="swiper-button-next"></div> -->
+            </div>
+        </div>
+    </div>
+</section>

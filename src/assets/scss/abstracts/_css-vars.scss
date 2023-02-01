@@ -19,4 +19,8 @@
         --bs-gradient: none;
         text-transform: uppercase;
     }
+    .card{
+        --bs-card-spacer-y: 1rem;
+        --bs-card-spacer-x: 1.5rem;
+    }
 }

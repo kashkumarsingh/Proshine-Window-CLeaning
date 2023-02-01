@@ -1,0 +1,42 @@
+<section id="blog" class="blog">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-sm-12">
+                <div class="section-heading" data-aos="fade-right">
+                    <p>Around the world</p>
+                    <h1>Our <span>ProShine</span> Blog</h1>
+                </div>
+            </div>
+            <!-- /Section Heading-->
+        </div>
+        <!-- /Row -->
+        <div class="row">
+            {{#if (config blogs)}}
+            {{#each blogs.entries}}
+            <article class="col-12 col-sm-12 col-lg-4 article" data-aos="fade-up">
+                <div class="article-card card">
+                    <div class="article__img card-img">
+                        <picture>
+                            <img class="img-fluid" src="{{ img }}" alt="{{ config.defaultImgAlt }}">
+                        </picture>
+                    </div>
+                    <div class="article__content card-body">
+                         <div class="article__content-heading">
+                            <h5 class="article__title">{{title}} by <span class="article__meta-author">{{author}}</span></h5>
+                            <p class="article__meta-date">{{meta-date}}</p>
+                         </div>
+                         <a href="#" class="article__viewmore"><span class="fas fa-arrow-right"></span></a>
+                    </div>
+                </div>
+            </article>
+            {{/each}}
+            {{/if}}
+            <div class="col-12 col-sm-12">
+                <div class="hww__steps-cta" data-aos="fade-left">
+                    <a href="#" class="btn btn-primary">View More</a>
+                </div>
+            </div>
+        </div>
+        <!-- /Row -->
+    </div>
+</section>

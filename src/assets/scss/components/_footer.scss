@@ -9,6 +9,11 @@
     .footer__bottom{
         padding-bottom: 30px;
     }
+    .footer__widget-heading{
+        h5{
+            color: $white;
+        }
+    }
     .footer__about {
         >div {
             margin-bottom: 30px;

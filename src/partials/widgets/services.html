@@ -1,0 +1,51 @@
+<section id="service" class="services">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-sm-12">
+                <div class="section-heading" data-aos="fade-right">
+                    <p>We delivered the best services</p>
+                    <h1>Our <span>ProShine</span> Services</h1>
+                </div>
+            </div>
+            <!-- /Section Heading-->
+        </div>
+        <!-- /Row -->
+        <div class="row">
+            <div class="col-12 col-sm-12">
+                {{#if (config services)}} 
+                <div class="services__content swiper" data-swiper>
+                    <div class="swiper-wrapper">
+                        {{#each services.entries}}
+                        <article class="swiper-slide service-article" data-aos="fade-up">
+                            <div class="service-article-card card">
+                                <div class="service-article__img card-img">
+                                    <picture>
+                                        <img class="img-fluid" src="{{ img }}" alt="{{ config.defaultImgAlt }}">
+                                    </picture>
+                                </div>
+                                <div class="service-article__content card-body">
+                                    <div class="service-article__content-heading">
+                                        <picture class="service-article__icon">
+                                            <img class="img-fluid" src="{{ icon }}" alt="{{ config.defaultImgAlt }}">
+                                        </picture>
+                                        <div class="service-article__meta">
+                                            <h5 class="service-article__title">{{title}}</h5>
+                                            <p class="service-article__category">{{category}}</p>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="article__viewmore"><span class="fas fa-arrow-right"></span></a>
+                                </div>
+                            </div>
+                        </article>
+                        {{/each}}
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="services-swiper-pagination"></div>
+                {{/if}}
+
+            </div>
+        </div>
+        <!-- /Row -->
+    </div>
+</section>

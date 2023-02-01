@@ -6,16 +6,7 @@ $themeColor:#B87C34 !default;
         --swiper-theme-color: #{$themeColor};
     }
 }
-.swiper {
-    width: auto;
-    // height: 640px;
 
-    img {
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-    }
-}
 
 .swiper-pagination-bullet {
     width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 15px));

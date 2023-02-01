@@ -20,6 +20,49 @@
     }
 }
 
+.services {
+    position: relative;
+    padding: 80px 0;
+    background-color: #EEF2F5;
+    text-align: center;
+
+    .section-heading {
+        margin-bottom: 48px;
+    }
+
+    .service-article {
+        margin-bottom: 32px;
+    }
+
+    .service-article__img {
+        img {
+            width: 100%;
+        }
+    }
+
+    .service-article__content {
+        text-align: left;
+        @include flexbox();
+        align-items: center;
+        justify-content: space-between;
+
+        .service-article__content-heading {
+            @include flexbox();
+            align-items: center;
+            justify-content: flex-start;
+            gap:15px;
+            .service-article__meta {
+                .service-article__category {
+                    text-transform: capitalize;
+                    color:$orange;
+                    font-size: 1rem;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
 .hww {
     position: relative;
     padding: 80px 0;
@@ -116,8 +159,64 @@
         text-align: center;
         background-color: #fff;
         box-shadow: 0 11px 32px 0 rgb(0 0 0 / 10%);
-        padding:32px 24px;
-        border:0px solid #fff;
+        padding: 32px 0;
+        border: 0px solid #fff;
         border-radius: 8px;
+
+        .reviews__text {
+            padding: 0 24px;
+
+            p {
+                margin-bottom: 0;
+            }
+        }
+
+        .reviews__rating {
+            p {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.blog {
+    position: relative;
+    padding: 80px 0;
+    text-align: center;
+
+    .section-heading {
+        margin-bottom: 48px;
+    }
+
+    .article {
+        margin-bottom: 32px;
+
+        .article-card {
+            img {
+                width: 100%
+            }
+
+            .article__content {
+                text-align: left;
+                @include flexbox();
+                align-items: center;
+
+                .article__content-heading {
+                    .article__title {
+                        span {
+                            color: $orange;
+                        }
+                    }
+
+                    .article__meta-date {
+                        font-size: 1rem;
+                    }
+                }
+
+                .article__viewmore {
+                    font-size: 1.5rem;
+                }
+            }
+        }
     }
 }

@@ -1,0 +1,16 @@
+{
+    "entries": [
+        {
+            "quote": "These guys are amazing! The team was prompt, fast, and really polite. Our windows had some hard water build up from sprinklers and they were able to use their magic (and elbow grease) to make them shine! I will be using this company again and would recommend them to all my friends!",
+            "avatar": "{{webRoot}}/assets/images/",
+            "name": "Kara H.",
+            "rating": "5"
+        },
+        {
+            "quote": "Lorem ipsum ",
+            "avatar": "{{webRoot}}/assets/images/",
+            "name": "Sam P.",
+            "rating": "4.5"
+        }
+    ]
+}
