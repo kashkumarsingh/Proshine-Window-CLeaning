@@ -123,6 +123,10 @@ const wPackConfig = {
     ],
   },
   plugins: [
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery'
+    }),
     new webpack.ProgressPlugin(),
     new CopyPlugin({
       patterns: [

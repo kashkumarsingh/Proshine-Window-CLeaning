@@ -11,6 +11,9 @@
             margin: 0 auto;
 
             .about-content__desc {
+                .section-heading{
+                    margin-bottom: 1rem;
+                }
                 span {
                     font-family: $secondary-font-family;
                 }
@@ -27,11 +30,11 @@
     text-align: center;
 
     .section-heading {
-        margin-bottom: 48px;
+        margin-bottom: 2rem;
     }
 
     .service-article {
-        margin-bottom: 32px;
+        margin-bottom: 2rem;
     }
 
     .service-article__img {
@@ -69,7 +72,7 @@
     text-align: center;
 
     .section-heading {
-        margin-bottom: 32px;
+        margin-bottom: 2rem;
     }
 
     .hww__steps {
@@ -88,7 +91,7 @@
     .hww__steps-single {
         position: relative;
         text-align: center;
-        margin-bottom: 64px;
+        margin-bottom: 4rem;
 
         &::after {
             content: '';
@@ -148,7 +151,7 @@
     background-color: #EEF2F5;
 
     .section-heading {
-        margin-bottom: 48px;
+        margin-bottom: 2rem;
     }
 
     .reviews__content {
@@ -162,6 +165,20 @@
         padding: 32px 0;
         border: 0px solid #fff;
         border-radius: 8px;
+        .reivews__content-single{
+            .reviews__icon{
+                svg{
+                    font-size: 60px;
+                    color:#EEF2F5;
+                }
+            }
+            .reviews__author{
+                p{
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                }
+            }
+        }
 
         .reviews__text {
             padding: 0 24px;
@@ -185,11 +202,11 @@
     text-align: center;
 
     .section-heading {
-        margin-bottom: 48px;
+        margin-bottom: 2rem;
     }
 
     .article {
-        margin-bottom: 32px;
+        margin-bottom: 2rem;
 
         .article-card {
             img {

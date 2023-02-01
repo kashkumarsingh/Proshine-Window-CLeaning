@@ -17,18 +17,6 @@
             "icon":"{{webRoot}}/assets/images/gutter-cleaning.svg",
             "title":"Gutter Cleaning",
             "category": "cleaning"
-        },
-        {
-            "img":"{{webRoot}}/assets/images/service-three.jpg",
-            "icon":"{{webRoot}}/assets/images/gutter-cleaning.svg",
-            "title":"Gutter Cleaning",
-            "category": "cleaning"
-        },
-        {
-            "img":"{{webRoot}}/assets/images/service-three.jpg",
-            "icon":"{{webRoot}}/assets/images/gutter-cleaning.svg",
-            "title":"Gutter Cleaning",
-            "category": "cleaning"
         }
     ]
 }

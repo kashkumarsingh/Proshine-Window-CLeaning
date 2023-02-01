@@ -1,26 +1,57 @@
 :root {
     /* Bootstrap vars */
     --bs-font-sans-serif: 'Montserrat', sans-serif;
-
-    .btn-outline-secondary {
-        --bs-btn-color: #fff;
-        --bs-btn-border-color: #fff;
-        --bs-btn-hover-color: #000;
-        --bs-btn-hover-bg: #eeb738;
-        --bs-btn-hover-border-color: #eeb738;
-        --bs-btn-focus-shadow-rgb: 238,183,56;
-        --bs-btn-active-color: #000;
-        --bs-btn-active-bg: #eeb738;
-        --bs-btn-active-border-color: #eeb738;
-        --bs-btn-active-shadow: none;
-        --bs-btn-disabled-color: #eeb738;
-        --bs-btn-disabled-bg: transparent;
-        --bs-btn-disabled-border-color: #eeb738;
-        --bs-gradient: none;
-        text-transform: uppercase;
-    }
     .card{
         --bs-card-spacer-y: 1rem;
         --bs-card-spacer-x: 1.5rem;
     }
+    --bs-navbar-active-color: #{$orange};
+}
+.btn {
+    --bs-btn-padding-x: 2rem;
+    --bs-btn-padding-y: 1rem;
+    --bs-btn-font-family: Montserrat,sans-serif;
+    --bs-btn-font-size: 1rem;
+    --bs-btn-font-weight: 700;
+    --bs-btn-line-height: 1.65;
+    font-family: var(--bs-btn-font-family);
+    font-size: var(--bs-btn-font-size);
+    font-weight: var(--bs-btn-font-weight);
+    line-height: var(--bs-btn-line-height);
+    padding: var(--bs-btn-padding-y) var(--bs-btn-padding-x);
+    text-transform: uppercase;
+    width:230px;
+}
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #0C243C;
+    --bs-btn-border-color: #0c243c;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #{$orange};
+    --bs-btn-hover-border-color: #{$orange};
+    --bs-btn-focus-shadow-rgb: none;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #{$orange};
+    --bs-btn-active-border-color: #{$orange};
+    --bs-btn-active-shadow: none;
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #cccccc;
+    --bs-btn-disabled-border-color: #cccccc
+}
+
+.btn-secondary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #{$orange};
+    --bs-btn-border-color:#{$orange};
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #{$blue};
+    --bs-btn-hover-border-color:#{$white};
+    --bs-btn-focus-shadow-rgb: 202,156,48;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #{$blue};
+    --bs-btn-active-border-color: #{$blue};
+    --bs-btn-active-shadow: none;
+    --bs-btn-disabled-color: #ccc;
+    --bs-btn-disabled-bg: #ccc;
+    --bs-btn-disabled-border-color: #ccc
 }

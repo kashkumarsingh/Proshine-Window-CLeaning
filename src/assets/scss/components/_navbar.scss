@@ -1,10 +1,16 @@
 .site-navbar {
     .nav-item {
-        margin-right: 16px;
+        margin-right: 1rem;
 
         .nav-link {
             text-transform: uppercase;
-            color: #fff;
+            color: $white;
+            &:hover{
+                color:$orange;
+            }
+        }
+        .active{
+            color:$orange;
         }
     }
 }

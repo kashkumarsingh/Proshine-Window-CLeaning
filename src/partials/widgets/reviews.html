@@ -17,7 +17,7 @@
                         {{#each reviews.entries}}
                         <div class="swiper-slide">
                             <div class="reivews__content-single">
-                                <div class="reviews__icon">Icon here</div>
+                                <div class="reviews__icon"><span class="fas fa-quote-left"></span></div>
                                 <div class="reviews__text">
                                     <p>{{quote}}</p>
                                 </div>
@@ -25,7 +25,7 @@
                                     <p>{{name}}</p>
                                 </div>
                                 <div class="reviews__rating">
-                                    <p><input id="input-3" name="input-3" value={{rating}} class="rating-loading"></p>
+                                    <div class="my-rating" data-rating="2.5"></div>
                                 </div>
                             </div>
                         </div>
