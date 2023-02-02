@@ -31,26 +31,61 @@
         .herohome__content-inner {
             max-width: 960px;
             width: 100%;
-            margin:0 auto;
+            margin: 0 auto;
+
             .herohome-heading,
             .herohome-subheading {
-                margin-bottom: 36px;
+                margin-bottom: 2rem;
             }
 
             .herohome-heading {
                 h1 {
-                    color:$white;
-                    font-size: 64px;;
+                    color: $white;
+                    font-size: 4rem;
                     font-weight: 600;
                 }
             }
-            .herohome-subheading{
-                h5{
-                    color:$white;
+
+            .herohome-subheading {
+                h5 {
+                    color: $white;
                 }
             }
 
         }
 
+    }
+}
+
+
+
+// Media Queries
+@include media-breakpoint-only(xs) {
+    .herohome {
+        height: auto;
+
+        .herohome__content {
+            height: auto;
+            margin: 2.5rem 0;
+
+            .herohome__content-inner {
+
+                .herohome-heading,
+                .herohome-subheading {
+                    margin-bottom: 1rem;
+                }
+
+                .herohome-heading {
+                    h1 {
+                        font-size: 2rem;
+                    }
+                }
+                .herohome-subheading {
+                    h5{
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
     }
 }

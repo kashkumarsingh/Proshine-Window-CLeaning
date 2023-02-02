@@ -12,7 +12,7 @@
         <div class="row">
             <div class="col-12 col-sm-12">
                 <div class="reviews__content swiper"
-                    data-swiper='{"autoplay" : {"delay": 2500}, "loop": true,"pagination": {"el": ".swiper-pagination", "clickable":true}}'>
+                    data-swiper='{"autoplay" : {"delay": 3500}, "loop": false,"pagination": {"el": ".swiper-pagination", "clickable":true}}'>
                     <div class="swiper-wrapper">
                         {{#each reviews.entries}}
                         <div class="swiper-slide">
@@ -25,7 +25,7 @@
                                     <p>{{name}}</p>
                                 </div>
                                 <div class="reviews__rating">
-                                    <div class="my-rating" data-rating="2.5"></div>
+                                    <div class="my-rating" data-rating="{{rating}}"></div>
                                 </div>
                             </div>
                         </div>

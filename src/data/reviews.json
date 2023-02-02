@@ -4,13 +4,31 @@
             "quote": "These guys are amazing! The team was prompt, fast, and really polite. Our windows had some hard water build up from sprinklers and they were able to use their magic (and elbow grease) to make them shine! I will be using this company again and would recommend them to all my friends!",
             "avatar": "{{webRoot}}/assets/images/",
             "name": "Kara H.",
+            "rating": "4.5"
+        },
+        {
+            "quote": "They came out the same day (on a Saturday!) to give us a quote for Christmas lights.  They ordered our lights and installed them the next business day.  Great quality and amazing customer service!  We've also used them for window cleaning and they do a fantastic job!  I highly recommend them!",
+            "avatar": "{{webRoot}}/assets/images/",
+            "name": "Jenny B.",
             "rating": "5"
         },
         {
-            "quote": "Lorem ipsum ",
+            "quote": "We have used ProShine since moving to the area both for window cleaning and Christmas lights.  We have been very pleased with the communication, professional and polite attitude of the team, quality of the work, and the reasonable pricing.  Would highly recommend this company.",
             "avatar": "{{webRoot}}/assets/images/",
-            "name": "Sam P.",
+            "name": " Bobbi B.",
             "rating": "4.5"
+        },
+        {
+            "quote": "Very happy with service and quality of work on our Christmas lights.  Rick was on top of making sure everything was done correctly and price was very fair.  I will call ProShine in the future.",
+            "avatar": "{{webRoot}}/assets/images/",
+            "name": "Lynn S.",
+            "rating": "5"
+        },
+        {
+            "quote": "My windows that haven't been cleaned in years were filthy, especially tons of dust after a remodel.  Now they are sparkling clean, and the price was very fair!",
+            "avatar": "{{webRoot}}/assets/images/",
+            "name": "Kara K.",
+            "rating": "5"
         }
     ]
 }

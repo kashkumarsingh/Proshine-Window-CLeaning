@@ -1,16 +1,19 @@
 :root {
     /* Bootstrap vars */
     --bs-font-sans-serif: 'Montserrat', sans-serif;
-    .card{
+
+    .card {
         --bs-card-spacer-y: 1rem;
         --bs-card-spacer-x: 1.5rem;
     }
+
     --bs-navbar-active-color: #{$orange};
 }
+
 .btn {
     --bs-btn-padding-x: 2rem;
     --bs-btn-padding-y: 1rem;
-    --bs-btn-font-family: Montserrat,sans-serif;
+    --bs-btn-font-family: Montserrat, sans-serif;
     --bs-btn-font-size: 1rem;
     --bs-btn-font-weight: 700;
     --bs-btn-line-height: 1.65;
@@ -20,8 +23,9 @@
     line-height: var(--bs-btn-line-height);
     padding: var(--bs-btn-padding-y) var(--bs-btn-padding-x);
     text-transform: uppercase;
-    width:230px;
+    width: 230px;
 }
+
 .btn-primary {
     --bs-btn-color: #fff;
     --bs-btn-bg: #0C243C;
@@ -46,7 +50,7 @@
     --bs-btn-hover-color: #fff;
     --bs-btn-hover-bg: #{$blue};
     --bs-btn-hover-border-color:#{$white};
-    --bs-btn-focus-shadow-rgb: 202,156,48;
+    --bs-btn-focus-shadow-rgb: 202, 156, 48;
     --bs-btn-active-color: #fff;
     --bs-btn-active-bg: #{$blue};
     --bs-btn-active-border-color: #{$blue};
@@ -54,4 +58,48 @@
     --bs-btn-disabled-color: #ccc;
     --bs-btn-disabled-bg: #ccc;
     --bs-btn-disabled-border-color: #ccc
+}
+
+// Media Queries
+@include media-breakpoint-down(lg){
+    .navbar-dark {
+        --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%0A%3Csvg width='162' height='142' viewBox='0 0 162 142' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.7714 25.9713H155.828C159.015 25.9713 161.599 23.3875 161.599 20.1999V5.7714C161.599 2.58378 159.015 0 155.828 0H5.7714C2.58378 0 0 2.58378 0 5.7714V20.1999C0 23.3875 2.58378 25.9713 5.7714 25.9713ZM5.7714 83.6853H155.828C159.015 83.6853 161.599 81.1015 161.599 77.9139V63.4854C161.599 60.2978 159.015 57.714 155.828 57.714H5.7714C2.58378 57.714 0 60.2978 0 63.4854V77.9139C0 81.1015 2.58378 83.6853 5.7714 83.6853ZM5.7714 141.399H155.828C159.015 141.399 161.599 138.816 161.599 135.628V121.199C161.599 118.012 159.015 115.428 155.828 115.428H5.7714C2.58378 115.428 0 118.012 0 121.199V135.628C0 138.816 2.58378 141.399 5.7714 141.399Z' fill='white'/%3E%3C/svg%3E%0A");
+    }
+    .navbar-toggler {
+        background-color: transparent;
+        border: none;
+        border-radius: 0;
+        color: #{$white};
+    }
+
+    .offcanvas {
+        --bs-offcanvas-bg: #{$blue};
+        .offcanvas-header {
+            justify-content: flex-end;
+        }
+        
+        .offcanvas-body {
+            .navbar-nav {
+                align-items: flex-start !important;
+            }
+        }
+    }
+    .btn-close{
+        background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='162' height='162' viewBox='0 0 162 162' fill='none'%3E%3Cpath d='M111.43 80.7996L157.371 34.8586C163.009 29.221 163.009 20.0805 157.371 14.4383L147.161 4.22821C141.523 -1.4094 132.383 -1.4094 126.741 4.22821L80.7996 50.1692L34.8586 4.22821C29.221 -1.4094 20.0805 -1.4094 14.4383 4.22821L4.22821 14.4383C-1.4094 20.0759 -1.4094 29.2164 4.22821 34.8586L50.1692 80.7996L4.22821 126.741C-1.4094 132.378 -1.4094 141.519 4.22821 147.161L14.4383 157.371C20.0759 163.009 29.221 163.009 34.8586 157.371L80.7996 111.43L126.741 157.371C132.378 163.009 141.523 163.009 147.161 157.371L157.371 147.161C163.009 141.523 163.009 132.383 157.371 126.741L111.43 80.7996Z' fill='white'/%3E%3C/svg%3E") 50%/1em auto no-repeat;
+    }
+    
+}
+
+@include media-breakpoint-only(xs) {
+    :root {
+        .card {
+            --bs-card-spacer-y: 1rem;
+            --bs-card-spacer-x: 1rem;
+        }
+    }
+    
+    .offcanvas{
+        --bs-offcanvas-width: calc(100% - 5%);
+    }
+
 }

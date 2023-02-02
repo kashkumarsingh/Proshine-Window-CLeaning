@@ -6,9 +6,10 @@ import "@fortawesome/fontawesome-free/js/all.js";
 // Components
 import "./components/aos";
 import "./components/swiper";
-// import "./components/bootstrap-star-rating";
+import "./components/jquery.star-rating-svg";
+// import "bootstrap-star-rating/js/star-rating.js";
+// import "bootstrap-star-rating/themes/krajee-fas/theme.js";
 
 //Theme misc
 import "./misc";
-
-
+  

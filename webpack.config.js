@@ -89,6 +89,10 @@ const wPackConfig = {
           },
         ],
       },
+      {
+        test: /\.json$/,
+        type: 'json',
+      },
     ],
   },
   optimization: {

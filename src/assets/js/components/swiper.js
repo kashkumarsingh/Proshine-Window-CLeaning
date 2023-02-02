@@ -28,21 +28,21 @@ Swiper.use([Navigation, Pagination,Autoplay]);
     
     // Default parameters
     slidesPerView: 3,
-    spaceBetween: 10,
+    spaceBetween: 15,
     // Responsive breakpoints
     breakpoints: {
       // when window width is >= 320px
       320: {
-        slidesPerView: 2,
-        spaceBetween: 20
+        slidesPerView: 1,
+        spaceBetween: 15
       },
-      // when window width is >= 480px
-      480: {
-        slidesPerView: 3,
+      // when window width is >= 575px
+      575: {
+        slidesPerView: 2,
         spaceBetween: 30
       },
-      // when window width is >= 640px
-      640: {
+      // when window width is >= 840px
+      840: {
         slidesPerView: 3,
         spaceBetween: 30
       }

@@ -19,5 +19,10 @@
   }
   copyRightYear();
 
+  $(".my-rating").starRating({
+    readOnly: true
+  });
+  
+
 })();
 

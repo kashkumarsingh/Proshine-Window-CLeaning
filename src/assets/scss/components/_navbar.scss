@@ -22,9 +22,8 @@
     gap: 16px;
     flex-flow: row nowrap;
 }
-
-// `xl` applies to large devices (desktops, less than 1200px)
-@media (max-width: 1199.98px) {
+// Media Queries
+@include media-breakpoint-down(xl) {
     .site-brand {
         .navbar-brand {
             img {
@@ -34,3 +33,23 @@
         }
     }
 }
+
+@include media-breakpoint-down(lg){
+    .site-navbar {
+        .nav-item {
+            margin-right: 0;
+            width:100%;
+            .nav-link {
+                border-bottom: 1px solid rgb(255 255 255 / 30%);
+                margin-bottom: 1rem;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+            a.btn{
+                width:100%;
+            }
+        }
+    }
+}
+
