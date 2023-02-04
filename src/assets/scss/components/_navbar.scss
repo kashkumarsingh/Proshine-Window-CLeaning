@@ -21,6 +21,16 @@
     align-items: center;
     gap: 16px;
     flex-flow: row nowrap;
+    .search-container{
+        a.btn-search{
+            color:$white;
+            font-size:2rem;
+            @include transition(all .3s ease-in-out);
+            &:hover{
+                color:$orange;
+            }
+        }
+    }
 }
 // Media Queries
 @include media-breakpoint-down(xl) {
@@ -50,6 +60,13 @@
                 width:100%;
             }
         }
+    }
+}
+
+
+@include media-breakpoint-only(xs) {
+    .site-navigation{
+        gap:8px;
     }
 }
 
