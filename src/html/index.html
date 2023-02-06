@@ -2,7 +2,7 @@
 <html lang="en">
 {{>(config config.partials.head) title=config.defaultPageTitle}}
 
-<body>
+<body data-bs-spy="scroll" data-bs-target=".navbar">
    <!-- Navbar -->
    {{> header/navbar configClassList=config.classes.navbar classList=""}}
    <!-- Main Content -->

@@ -22,7 +22,25 @@
   $(".my-rating").starRating({
     readOnly: true
   });
-  
+
+  //sticky header
+  // function stickyHeader(){
+  //   const header = document.getElementById("stickyNav");
+  //   console.log(header);
+  //   const stickyPosition = header.offsetTop + header.offsetHeight;
+  //   console.log(stickyPosition);
+
+  //   window.onscroll  = () => {
+  //     if (window.pageYOffset > stickyPosition){
+  //       header.classList.add("stickyHead");
+  //      // document.querySelectorAll('body')[0].style.marginTop = header.offsetHeight + "px";
+  //     }else{
+  //       header.classList.remove("stickyHead");
+  //     //document.querySelectorAll('body')[0].style.marginTop = "0px";
+  //     }
+  //   }
+  // }
+  //stickyHeader();
 
 })();
 
