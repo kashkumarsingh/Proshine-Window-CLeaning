@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+{{>(config config.partials.head) title=config.defaultPageTitle}}
+
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+   <!-- Navbar -->
+   {{> header/navbar configClassList=config.classes.navbar classList=""}}
+   <!-- Main Content -->
+   <main id="role" role="main" class="{{config.classes.content}}">
+      <!-- Page Content Goes Here -->
+      <div id="innerHero" class="inner-hero contact-hero">
+         <div class="container">
+            <div class="row">
+               <div class="col-12 col-sm-12">
+                  <div class="inner-hero__heading">
+                     <h1>Contact Us</h1>
+                  </div>
+                  <!-- /InnerHero Heading -->
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- /InnerHero -->
+      <!-- How We Works -->
+      {{> widgets/howitworks}}
+      <!-- /How We Works -->
+      <!-- /Contact Map -->
+      <section class="contact-map">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-12 col-sm-12">
+                  <div class="contact-map__frame">
+                     <iframe style="border:0" loading="lazy" allowfullscreen
+                        src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ2UEuhANTrlQRjr6Trah4byE&key=AIzaSyBQJ3k4eR3FqYtSkCAqjbo8lstZMH5OUEk"></iframe>
+                     </iframe>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- /Contact Map -->
+      <section id="requestQuote" class="request-quote-form">
+         <div class="container">
+            <div class="row">
+               <div class="col-12 col-sm-12">
+                  <div class="request-quote-form__controls">
+                      <div class="request-quote-form__controls-inner">
+                        <div class="request-quote-form__heading">
+                           <h1>Request a quote</h1>
+                           <p>Please call or request a quote and we will happy to assist you</p>
+                        </div>
+                        <!-- /Heading -->
+                        <form action="" class="form">
+                           <div class="form-input-controls fullname-input-control">
+                              <label for="fullname" class="form-label">Full Name*</label>
+                              <input type="text" class="form-control" id="fullname"name="fullname">
+                           </div>
+                           <!-- /Full name-->
+                           <div class="form-input-controls email-input-control">
+                              <label for="email" class="form-label">Your Email*</label>
+                              <input type="email" class="form-control" id="email" name="email">
+                           </div>
+                           <!-- /Email -->
+                           <div class="form-input-controls phone-input-control">
+                              <label for="phone" class="form-label">Your Phone*</label>
+                              <input type="phone" class="form-control" id="phone" name="phone">
+                           </div>
+                           <!-- /Phone -->
+                           <div class="form-input-controls msg-input-control">
+                              <label for="msg" class="form-label">Message*</label>
+                              <textarea type="text" name="message" class="form-control" id="msg" cols="30" rows="10"></textarea>
+                           </div>
+                           <!-- /Message -->
+                           <button id="subBtn" class="btn btn-primary" type="submit">Submit</button>
+                        </form>
+                      </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+   </main>
+   <!-- /Main Content -->
+   <!-- Footer -->
+   {{> footer/footer }}
+
+   <!-- Theme JS -->
+   {{> footer/scripts }}
+</body>
+
+</html>
