@@ -4,19 +4,25 @@
             "img":"{{webRoot}}/assets/images/blog-one.jpg",
             "author":"Admin",
             "title":"Safety Consideration when washing",
-            "meta-date": "03 July, 2022"
+            "meta-date": "03 July, 2022",
+            "shortdesc": "Our residential and commercial window washing services will keep your windows beautiful. We provide interior and exterior window cleaning of homes and commercial buildings. We ensure that all windows are cleaned to perfection."
+
         },
         {
             "img":"{{webRoot}}/assets/images/blog-two.jpg",
             "author":"Admin",
             "title":"Proper cleaning steps to follow",
-            "meta-date": "04 December, 2022"
+            "meta-date": "04 December, 2022",
+            "shortdesc": "Our residential and commercial window washing services will keep your windows beautiful. We provide interior and exterior window cleaning of homes and commercial buildings. We ensure that all windows are cleaned to perfection."
+
         },
         {
             "img":"{{webRoot}}/assets/images/blog-three.jpg",
             "author":"Admin",
             "title":"Gutter cleaning steps to follow",
-            "meta-date": "10 December, 2022"
+            "meta-date": "10 December, 2022",
+            "shortdesc": "Our residential and commercial window washing services will keep your windows beautiful. We provide interior and exterior window cleaning of homes and commercial buildings. We ensure that all windows are cleaned to perfection."
+
         }
     ]
 }

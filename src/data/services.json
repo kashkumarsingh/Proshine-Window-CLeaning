@@ -1,22 +1,35 @@
 {
-    "entries":[
+    "entries": [
         {
-            "img":"{{webRoot}}/assets/images/service-one.jpg",
-            "icon":"{{webRoot}}/assets/images/christmas-light.svg",
-            "title":"Christmas Lights",
-            "category": "installation"
+            "img": "{{webRoot}}/assets/images/service-one.jpg",
+            "icon": "{{webRoot}}/assets/images/christmas-light.svg",
+            "title": "Professional Window Cleaning Services",
+            "category": "installation",
+            "shortdesc": "Our residential and commercial window washing services will keep your windows beautiful. We provide interior and exterior window cleaning of homes and commercial buildings. We ensure that all windows are cleaned to perfection."
         },
         {
-            "img":"{{webRoot}}/assets/images/service-two.jpg",
-            "icon":"{{webRoot}}/assets/images/window-cleaning.svg",
-            "title":"Window Cleaning",
-            "category": "cleaning"
+            "img": "{{webRoot}}/assets/images/service-two.jpg",
+            "icon": "{{webRoot}}/assets/images/window-cleaning.svg",
+            "title": "Exterior House Cleaning and Lighting solutions",
+            "category": "cleaning",
+            "shortdesc": "Our residential and commercial window washing services will keep your windows beautiful. We provide interior and exterior window cleaning of homes and commercial buildings. We ensure that all windows are cleaned to perfection."
+
         },
         {
-            "img":"{{webRoot}}/assets/images/service-three.jpg",
-            "icon":"{{webRoot}}/assets/images/gutter-cleaning.svg",
-            "title":"Gutter Cleaning",
-            "category": "cleaning"
+            "img": "{{webRoot}}/assets/images/service-three.jpg",
+            "icon": "{{webRoot}}/assets/images/gutter-cleaning.svg",
+            "title": "Power Washing Services",
+            "category": "cleaning",
+            "shortdesc": "Our residential and commercial window washing services will keep your windows beautiful. We provide interior and exterior window cleaning of homes and commercial buildings. We ensure that all windows are cleaned to perfection."
+
+        },
+        {
+            "img": "{{webRoot}}/assets/images/service-three.jpg",
+            "icon": "{{webRoot}}/assets/images/gutter-cleaning.svg",
+            "title": "Holiday Light Installation",
+            "category": "cleaning",
+            "shortdesc": "Our residential and commercial window washing services will keep your windows beautiful. We provide interior and exterior window cleaning of homes and commercial buildings. We ensure that all windows are cleaned to perfection."
+
         }
     ]
 }

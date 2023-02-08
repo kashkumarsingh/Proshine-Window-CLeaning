@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+{{>(config config.partials.head) title=config.defaultPageTitle}}
+
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+   <!-- Navbar -->
+   {{> header/navbar configClassList=config.classes.navbar classList=""}}
+   <!-- Main Content -->
+   <main id="role" role="main" class="{{config.classes.content}}">
+      <!-- Page Content Goes Here -->
+      <div id="innerHero" class="inner-hero blogs-hero">
+         <div class="container">
+            <div class="row">
+               <div class="col-12 col-sm-12">
+                  <div class="inner-hero__heading">
+                     <h1>Blogs</h1>
+                  </div>
+                  <!-- /InnerHero Heading -->
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- /InnerHero -->
+      <!-- BlogList -->
+      <section id="blogLists" class="bloglists">
+         <div class="container">
+            <div class="row">
+               {{#if (config blogs)}}
+               {{#each blogs.entries}}
+               <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                  <article class="bloglists-article">
+                     <div class="bloglists-article-card card">
+                        <div class="bloglists-article__img card-img">
+                           <picture>
+                              <img class="img-fluid" src="{{ img }}" alt="{{ config.defaultImgAlt }}">
+                           </picture>
+                        </div>
+                        <div class="bloglists-article__content card-body">
+                           <div class="bloglists-article__content-heading">
+                              <div class="bloglists-article__meta">
+                                 <h6 class="bloglists-article__title">{{title}} by <span
+                                       class="blogslists-article__author">{{author}}</span></h6>
+                                 <p class="bloglists-article__date">{{meta-date}}</p>
+                                 <p class="bloglists-article__desc">{{shortdesc}}</p>
+                              </div>
+                           </div>
+                           <a href="single-service.html" class="btn btn-primary article__readmore">Read More</a>
+                        </div>
+                     </div>
+                  </article>
+               </div>
+               {{/each}}
+               {{/if}}
+            </div>
+         </div>
+      </section>
+      <!-- /BlogList -->
+      <!-- CTA Banner -->
+      <section id="ctaBanner" class="cta__banner cta__blogs">
+         <div class="container">
+            <div class="row">
+               <div class="col-12 col-sm-12">
+                  <div class="cta__banner-content">
+                     <h1>At <span>ProShine</span>, Maintaining your home takes time and energy.</h1>
+                     <p><span>ProShine</span> can help make your home beautiful by regularly maintaining the
+                        integrity of the windows! We can take care of all of the window washing and power washing for
+                        your house or business.</p>
+                     <h6>Call us at <span>208-519-9951</span> or <a href="contact.html"><span>contact us</span></a> for
+                        a quote.</h6>
+                     <div class="cta__banner-action">
+                        <a href="contact.html" class="btn btn-primary">Request a quote</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- /CTA Banner -->
+   </main>
+   <!-- /Main Content -->
+   <!-- Footer -->
+   {{> footer/footer }}
+
+   <!-- Theme JS -->
+   {{> footer/scripts }}
+</body>
+
+</html>

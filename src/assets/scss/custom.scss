@@ -49,7 +49,10 @@
         @include flexbox();
         align-items: center;
         justify-content: space-between;
-
+        height: 120px;
+        @include media-breakpoint-only(xs) {
+            height: auto;
+        }
         .service-article__content-heading {
             @include flexbox();
             align-items: center;
@@ -265,50 +268,252 @@
     }
 }
 
+//About Page
+.about-hero {
+    background-image: url("../images/about-hero.jpg");
+}
+
+.about_content {
+    position: relative;
+    padding: 5rem 0;
+    background-color: #EEF2F5;
+
+    .about_content__right {
+        position: relative;
+        margin-bottom: 1rem;
+
+        .about_content__right-img {
+            position: relative;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .about_content__left {
+        .section-heading {
+            margin-bottom: 1rem;
+            text-align: left;
+        }
+    }
+}
+
+.cta__about {
+    background-image: url("../images/cta_banner_about.jpg");
+}
 
 //Contact Page
-.contact-hero{
+.contact-hero {
     background-image: url("../images/contact-hero.jpg");
 }
-.contact-map{
-    [class*="col-"]{
+
+.contact-map {
+    [class*="col-"] {
         padding: 0;
     }
+
     position: relative;
-    .contact-map__frame{
-        width:100%;
-        iframe{
-            width:100%;
+
+    .contact-map__frame {
+        width: 100%;
+        background-color: #EEF2F5;
+
+        iframe {
+            width: 100%;
             height: 600px;
         }
     }
 }
-.request-quote-form{
+
+.request-quote-form {
     position: relative;
-    padding:5rem 0;
-    .request-quote-form__controls{
-        .request-quote-form__controls-inner{
+    padding: 5rem 0;
+
+    .request-quote-form__controls {
+        .request-quote-form__controls-inner {
             position: relative;
             background-color: #EEF2F5;
-            padding:65px 95px;
+            padding: 65px 95px;
             @include box-shadow(0, 4px, 25px, rgba(0, 0, 0, 0.1));
         }
-       .request-quote-form__heading{
-        @include flexbox();
-        flex-flow: column wrap;
-        align-items: center;
-        justify-content: center;
-       }
-       .form-input-controls{
-        margin-bottom: 1rem;
-         .form-control{
-            border:none;
-            border-radius: 5px;
-         }
-        
-       }
+
+        .request-quote-form__heading {
+            @include flexbox();
+            flex-flow: column wrap;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .form-input-controls {
+            margin-bottom: 1rem;
+
+            .form-control {
+                border: none;
+                border-radius: 5px;
+            }
+
+        }
     }
 }
+
+//Contact Page
+
+//Services Page
+.services-hero {
+    background-image: url("../images/services-hero.jpg");
+}
+
+.serviceslist {
+    position: relative;
+    padding: 5rem 0;
+
+    .serviceslist-article {
+        margin-bottom: 3rem;
+
+        .serviceslist-article-card {
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .25);
+
+            .serviceslist-article__img {
+                img {
+                    width: 100%;
+                }
+            }
+
+            .serviceslist-article__content {
+                @include flexbox();
+                align-items: flex-start;
+                justify-content: flex-start;
+                flex-flow: column nowrap;
+
+                .serviceslist-article__content-heading {
+                    .serviceslist-article__meta {
+                        @include flexbox();
+                        justify-content: space-evenly;
+                        align-items: flex-start;
+                        flex-flow: column nowrap;
+                        height: 320px;
+
+                        @include media-breakpoint-only(xs) {
+                            height: auto;
+                        }
+
+                        .serviceslist-article__title {
+                            @include flexbox();
+                            flex-flow: row nowrap;
+                            margin-bottom: 1rem;
+                            font-weight: 700;
+                        }
+                    }
+                }
+                
+                @include media-breakpoint-only(xs) {
+                    .article__readmore{
+                        width:100%;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+.cta__services {
+    background-image: url("../images/cta_banner_services.jpg");
+
+    .cta__banner-content {
+        h1 {
+            width: calc(100% - 25%);
+        }
+    }
+}
+
+//Blog Page
+.blogs-hero {
+    background-image: url("../images/services-hero.jpg");
+}
+.cta__blogs {
+    background-image: url("../images/cta_banner_services.jpg");
+
+    .cta__banner-content {
+        h1 {
+            width: calc(100% - 25%);
+            @include media-breakpoint-only(xs) {
+                width:100%;
+            }
+        }
+    }
+}
+.bloglists {
+    position: relative;
+    padding: 5rem 0;
+
+    .bloglists-article {
+        margin-bottom: 3rem;
+
+        .bloglists-article-card {
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .25);
+
+            .bloglists-article__img {
+                img {
+                    width: 100%;
+                }
+            }
+
+            .bloglists-article__content {
+                @include flexbox();
+                align-items: flex-start;
+                justify-content: flex-start;
+                flex-flow: column nowrap;
+
+                .bloglists-article__content-heading {
+                    .bloglists-article__meta {
+                        @include flexbox();
+                        justify-content: space-evenly;
+                        align-items: flex-start;
+                        flex-flow: column nowrap;
+                        height: 280px;
+
+                        @include media-breakpoint-only(xs) {
+                            height: auto;
+                        }
+
+                        .bloglists-article__title {
+                            font-size: 20px;
+                            font-weight: 700;
+                            @include media-breakpoint-only(xs) {
+                                margin-bottom: 1rem;
+                            }
+                            .blogslists-article__author{
+                                color:$orange;
+                                text-transform: lowercase;
+                            }
+                        }
+                        .bloglists-article__date{
+                            margin-bottom: 0;
+                            @include media-breakpoint-only(xs) {
+                                margin-bottom: 1rem;
+                            }
+                        }
+                    }
+                }
+                
+                @include media-breakpoint-only(xs) {
+                    .article__readmore{
+                        width:100%;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+
 
 //Media Quries
 @include media-breakpoint-down(xl) {
@@ -385,10 +590,12 @@
 
     .about,
     .services,
+    .serviceslist,
     .hww,
     .reviews,
     .blog,
-    .request-quote-form {
+    .request-quote-form,
+    .bloglists {
         padding: 2.5rem 0;
     }
 
@@ -417,18 +624,19 @@
         }
     }
 
-    .request-quote-form{
-        .request-quote-form__heading{
+    .request-quote-form {
+        .request-quote-form__heading {
             text-align: center;
         }
-        .request-quote-form__controls{
-            .request-quote-form__controls-inner{
-                padding:1rem .5rem;
+
+        .request-quote-form__controls {
+            .request-quote-form__controls-inner {
+                padding: 1rem .5rem;
             }
-            
-            button{
-                width:100%;
-                margin:0 auto;
+
+            button {
+                width: 100%;
+                margin: 0 auto;
             }
         }
     }

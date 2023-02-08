@@ -10,6 +10,10 @@ import "./components/jquery.star-rating-svg";
 // import "bootstrap-star-rating/js/star-rating.js";
 // import "bootstrap-star-rating/themes/krajee-fas/theme.js";
 
+// import barba from '@barba/core';
+
+// import gsap from "gsap";
+
 //Theme misc
 import "./misc";
   

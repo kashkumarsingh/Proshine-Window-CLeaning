@@ -1,21 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-{{> header/head title="About"}}
+{{>(config config.partials.head) title=config.defaultPageTitle}}
 
-<body>
-    <!-- Navbar -->
-    {{> header/navbar}}
-    <!-- Main Content -->
-    <main id="role" role="main">
-        <section class="about" id="about">
-            <div class="container">
-                About content goes here
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+   <!-- Navbar -->
+   {{> header/navbar configClassList=config.classes.navbar classList=""}}
+   <!-- Main Content -->
+   <main id="role" role="main" class="{{config.classes.content}}">
+      <!-- Page Content Goes Here -->
+      <div id="innerHero" class="inner-hero about-hero">
+         <div class="container">
+            <div class="row">
+               <div class="col-12 col-sm-12">
+                  <div class="inner-hero__heading">
+                     <h1>About Us</h1>
+                  </div>
+                  <!-- /InnerHero Heading -->
+               </div>
             </div>
-        </section>
-    </main>
-    <!-- /Main Content -->
-    <!-- Footer -->
-    {{> footer/footer }}
+         </div>
+      </div>
+      <!-- /InnerHero -->
+      <!-- /About Content -->
+      <section id="aboutContent" class="about_content">
+         <div class="container">
+            <div class="row">
+               <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                  <div class="about_content__right">
+                     <div class="about_content__right-img">
+                        <picture>
+                           <img class="img-fluid" src="{{WebRoot}}/assets/images/about-img-combine.jpg" alt="About">
+                        </picture>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                  <div class="about_content__left">
+                     <div class="section-heading about-content__heading">
+                        <p>About Us</p>
+                        <h1>About <span>ProShine</span> Window Cleaning</h1>
+                     </div>
+                     <div class="about-content__shortdesc">
+                        <p><span>ProShine</span> Window Cleaning is a local, family-owned business run by three brothers
+                           who,after graduating from Northwest Nazarene University, decided to stay in the Boise
+                           area to enjoy all four of Southwest Idaho's beautiful seasons and abundance of
+                           outdoor activities.</p>
+                        <p>Together, we created a professional, ethical company providing excellent service to our
+                           customers. We thrive on creating personal relationships with our customers. We offer
+                           residential and commercial window cleaning and pressure washing services, gutter cleaning,
+                           and Christmas light installation, including holiday displays, in Meridian, Kuna, Eagle, and
+                           the surrounding areas.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- /About Content -->
+      <!-- How We Works -->
+      {{> widgets/howitworks}}
+      <!-- /How We Works -->
+      <!-- CTA Banner -->
+      <section id="ctaBanner" class="cta__banner cta__about">
+         <div class="container">
+            <div class="row">
+               <div class="col-12 col-sm-12">
+                  <div class="cta__banner-content">
+                     <h1>At <span>ProShine</span>, we appreciate our customers</h1>
+                     <p>At <span>ProShine</span> Window Cleaning, we pride ourselves on excellent customer service, professional
+                        experience, and high-quality work. We make sure each project is done right from start to finish,
+                        and that our customers are 100% satisfied.</p>
+                     <h6>Call us at <span>208-519-9951</span> or <a href="contact.html"><span>contact us</span></a> for a quote.</h6>
+                     <div class="cta__banner-action">
+                         <a href="services.html" class="btn btn-primary">View Our Services</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- /CTA Banner -->
+
+   </main>
+   <!-- /Main Content -->
+   <!-- Footer -->
+   {{> footer/footer }}
+
+   <!-- Theme JS -->
+   {{> footer/scripts }}
 </body>
 
 </html>
