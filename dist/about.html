@@ -82,25 +82,35 @@
                        </div>
                        <div class="search-container">
                            <!-- <img src="./assets/images/search.svg" alt="Search"> -->
-                           <a class="button btn-search"  href="#siteSearch" role="button"
-                               aria-controls="siteSearch">
+                           <a class="button btn-search" href="javascript:void(0);" role="button" aria-controls="siteSearch"
+                               type="button" data-bs-toggle="modal" data-bs-target="#siteSearch">
                                <span class="fas fa-search"></span>
                            </a>
+                           <!-- Modal -->
+                           <div class="modal fade site-search" id="siteSearch" data-bs-backdrop="static"
+                               data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                               aria-hidden="true">
+                               <div class="modal-dialog modal-xl site-search-modal-dialog">
+                                   <div class="modal-content">
+                                       <div class="modal-header">
+                                           <h1 class="modal-title fs-5" id="staticBackdropLabel">Search Here</h1>
+                                           <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                               aria-label="Close"></button>
+                                       </div>
+                                       <div class="modal-body">
+                                           <form action="" class="form">
+                                               <div class="form-input-controls search-input-control">
+                                                   <input type="search" class="form-control" id="search" name="search">
+                                               </div>
+                                               <!-- /Search Input-->
+                                               <button id="searchBtn" class="btn btn-primary btn-search" type="submit">Search</button>
+                                                <!-- /Search Button -->
+                                           </form>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
                            <!--/Search -->
-                           <!-- <div class="offcanvas offcanvas-top" tabindex="-1" id="siteSearch"
-                               aria-labelledby="siteSearch">
-                               <div class="offcanvas-header search-header">
-                                   <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                                       aria-label="Close"></button>
-                               </div>
-                               <div class="offcanvas-body">
-                                   <form class="d-flex">
-                                       <input class="form-control me-2" type="search" placeholder="Search"
-                                           aria-label="Search">
-                                       <button class="btn btn-outline-success" type="submit">Search</button>
-                                   </form>
-                               </div>
-                           </div> -->
                        </div>
                        <!-- /Search -->
                    </nav>
