@@ -428,12 +428,13 @@
 
     .cta__banner-content {
         h1 {
-            width: calc(100%-25%);
+            width: calc(100% - 25%);
+            @include media-breakpoint-only(lg) {
+                width: 100%;
+            }
         }
 
-        @include media-breakpoint-only(lg) {
-            width: 100%;
-        }
+       
     }
 }
 
