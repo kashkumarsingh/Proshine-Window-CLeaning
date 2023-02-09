@@ -50,9 +50,11 @@
         align-items: center;
         justify-content: space-between;
         height: 120px;
+
         @include media-breakpoint-only(xs) {
             height: auto;
         }
+
         .service-article__content-heading {
             @include flexbox();
             align-items: center;
@@ -408,13 +410,13 @@
                         }
                     }
                 }
-                
+
                 @include media-breakpoint-only(xs) {
-                    .article__readmore{
-                        width:100%;
+                    .article__readmore {
+                        width: 100%;
                     }
                 }
-                
+
             }
         }
     }
@@ -423,8 +425,13 @@
 .cta__services {
     background-image: url("../images/cta_banner_services.jpg");
 
+
     .cta__banner-content {
         h1 {
+            width: calc(100%-25%);
+        }
+
+        @include media-breakpoint-only(lg) {
             width: 100%;
         }
     }
@@ -434,18 +441,21 @@
 .blogs-hero {
     background-image: url("../images/services-hero.jpg");
 }
+
 .cta__blogs {
     background-image: url("../images/cta_banner_services.jpg");
 
     .cta__banner-content {
         h1 {
             width: calc(100% - 25%);
+
             @include media-breakpoint-only(xs) {
-                width:100%;
+                width: 100%;
             }
         }
     }
 }
+
 .bloglists {
     position: relative;
     padding: 5rem 0;
@@ -485,29 +495,33 @@
                         .bloglists-article__title {
                             font-size: 20px;
                             font-weight: 700;
+
                             @include media-breakpoint-only(xs) {
                                 margin-bottom: 1rem;
                             }
-                            .blogslists-article__author{
-                                color:$orange;
+
+                            .blogslists-article__author {
+                                color: $orange;
                                 text-transform: lowercase;
                             }
                         }
-                        .bloglists-article__date{
+
+                        .bloglists-article__date {
                             margin-bottom: 0;
+
                             @include media-breakpoint-only(xs) {
                                 margin-bottom: 1rem;
                             }
                         }
                     }
                 }
-                
+
                 @include media-breakpoint-only(xs) {
-                    .article__readmore{
-                        width:100%;
+                    .article__readmore {
+                        width: 100%;
                     }
                 }
-                
+
             }
         }
     }
