@@ -242,6 +242,9 @@
 
     .article {
         margin-bottom: 2rem;
+        .article__viewmore{
+            text-decoration: none;
+        }
 
         .article-card {
             img {
