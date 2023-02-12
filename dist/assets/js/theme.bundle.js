@@ -469,6 +469,8 @@ swiper__WEBPACK_IMPORTED_MODULE_0__["default"].use([swiper__WEBPACK_IMPORTED_MOD
 // import "bootstrap-star-rating";
 // import "bootstrap-star-rating/themes/krajee-svg/theme.min";
 
+//import anime from "animejs";
+
 (function () {
   //Add a body class once page has loaded
   //Used to add CSS transitions to elems
@@ -509,7 +511,18 @@ swiper__WEBPACK_IMPORTED_MODULE_0__["default"].use([swiper__WEBPACK_IMPORTED_MOD
   // }
   //stickyHeader();
 
+
 })();
+// const hwwElem = document.querySelectorAll(".hww__steps-single");
+
+// hwwElem.forEach((element , i) => {
+//      anime({
+//         targets:element,
+//         right: 200 + (i*50),
+//         direction: 'alternate',
+//         easing: 'easeInOutSine'
+//      })
+// });
 
 
 
@@ -547,7 +560,6 @@ __webpack_require__.r(__webpack_exports__);
 // import barba from '@barba/core';
 
 // import gsap from "gsap";
-
 //Theme misc
 
   
