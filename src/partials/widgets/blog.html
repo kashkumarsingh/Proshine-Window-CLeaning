@@ -14,20 +14,23 @@
             {{#if (config blogs)}}
             {{#each blogs.entries}}
             <article class="col-12 col-sm-12 col-md-4 col-lg-4 article" data-aos="fade-up">
-                <div class="article-card card">
-                    <div class="article__img card-img">
-                        <picture>
-                            <img class="img-fluid" src="{{ img }}" alt="{{ config.defaultImgAlt }}">
-                        </picture>
+                <a href="blog.html" class="article__viewmore">
+                    <div class="article-card card">
+                        <div class="article__img card-img">
+                            <picture>
+                                <img class="img-fluid" src="{{ img }}" alt="{{ config.defaultImgAlt }}">
+                            </picture>
+                        </div>
+                        <div class="article__content card-body">
+                            <div class="article__content-heading">
+                                <h5 class="article__title">{{title}} by <span
+                                        class="article__meta-author">{{author}}</span></h5>
+                                <p class="article__meta-date">{{meta-date}}</p>
+                            </div>
+                            <span class="fas fa-arrow-right article_viewmore-icon"></span>
+                        </div>
                     </div>
-                    <div class="article__content card-body">
-                         <div class="article__content-heading">
-                            <h5 class="article__title">{{title}} by <span class="article__meta-author">{{author}}</span></h5>
-                            <p class="article__meta-date">{{meta-date}}</p>
-                         </div>
-                         <a href="blog.html" class="article__viewmore"><span class="fas fa-arrow-right"></span></a>
-                    </div>
-                </div>
+                </a>
             </article>
             {{/each}}
             {{/if}}
