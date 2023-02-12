@@ -2,6 +2,8 @@
 // import "bootstrap-star-rating";
 // import "bootstrap-star-rating/themes/krajee-svg/theme.min";
 
+//import anime from "animejs";
+
 (function () {
   //Add a body class once page has loaded
   //Used to add CSS transitions to elems
@@ -42,5 +44,16 @@
   // }
   //stickyHeader();
 
+
 })();
+// const hwwElem = document.querySelectorAll(".hww__steps-single");
+
+// hwwElem.forEach((element , i) => {
+//      anime({
+//         targets:element,
+//         right: 200 + (i*50),
+//         direction: 'alternate',
+//         easing: 'easeInOutSine'
+//      })
+// });
 

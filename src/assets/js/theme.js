@@ -13,7 +13,6 @@ import "./components/jquery.star-rating-svg";
 // import barba from '@barba/core';
 
 // import gsap from "gsap";
-
 //Theme misc
 import "./misc";
   

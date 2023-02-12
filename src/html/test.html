@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+{{>(config config.partials.head) title=config.defaultPageTitle}}
+
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+   <!-- Navbar -->
+   {{> header/navbar configClassList=config.classes.navbar classList=""}}
+   <!-- Main Content -->
+   <main id="role" role="main" class="{{config.classes.content}}">
+      <!-- Page Content Goes Here -->
+      <!-- Hero-->
+      {{> widgets/herohome }}
+      <!-- /Hero-->
+      <!-- About -->
+      {{> widgets/about}}
+      <!-- /About -->
+      <!-- How We Works -->
+      {{> widgets/howitworks}}
+      <!-- /How We Works -->
+      <!-- Blog -->
+      {{> widgets/blog}}
+      <!-- /Blog -->
+   </main>
+   <!-- /Main Content -->
+   <!-- Footer -->
+   {{> footer/footer }}
+
+   <!-- Theme JS -->
+   {{> footer/scripts }}
+</body>
+
+</html>

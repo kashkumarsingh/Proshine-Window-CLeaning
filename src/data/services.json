@@ -24,7 +24,7 @@
 
         },
         {
-            "img": "{{webRoot}}/assets/images/service-three.jpg",
+            "img": "{{webRoot}}/assets/images/service-four.jpg",
             "icon": "{{webRoot}}/assets/images/gutter-cleaning.svg",
             "title": "Holiday Light Installation",
             "category": "cleaning",
