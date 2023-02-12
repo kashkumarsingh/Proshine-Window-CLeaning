@@ -1,4 +1,4 @@
-.sticky{
+.sticky {
     position: fixed;
     top: 0;
     z-index: 100;
@@ -7,15 +7,16 @@
     // animation: smoothScroll 1s forwards;
 }
 
-  @keyframes smoothScroll {
+@keyframes smoothScroll {
     0% {
-      transform: translateY(-142px);
+        transform: translateY(-142px);
     }
+
     100% {
-      transform: translateY(0px);
+        transform: translateY(0px);
     }
-  }
-  
+}
+
 .site-navbar {
     .nav-item {
         margin-right: 1rem;
@@ -23,12 +24,14 @@
         .nav-link {
             text-transform: uppercase;
             color: $white;
-            &:hover{
-                color:$orange;
+
+            &:hover {
+                color: $orange;
             }
         }
-        .active{
-            color:$orange;
+
+        .active {
+            color: $orange;
         }
     }
 }
@@ -39,38 +42,53 @@
     align-items: center;
     gap: 16px;
     flex-flow: row nowrap;
-    .search-container{
-        a.btn-search{
-            color:$white;
-            font-size:2rem;
+
+    .search-container {
+        a.btn-search {
+            color: $white;
+            font-size: 2rem;
             @include transition(all .3s ease-in-out);
-            &:hover{
-                color:$orange;
+
+            &:hover {
+                color: $orange;
             }
         }
     }
 }
 
-.site-search{
-    .modal-xl{
-        --bs-modal-width:100%;
-        padding:0 15px;
+.site-search {
+    .modal-xl {
+        --bs-modal-width: 100%;
+        padding: 0 15px;
         border-radius: 0;
         margin: 0 auto;
+
         @include media-breakpoint-between(xs, xxl) {
-            --bs-modal-width:100%;
+            --bs-modal-width: 100%;
         }
-        .modal-content{
+
+        .modal-content {
             --bs-modal-border-radius: 0rem;
             border-radius: var(--bs-modal-border-radius);
+
+            .modal-header {
+                .btn-search-close {
+                    background: transparent;
+                    border: none;
+                    font-size: 2rem;
+                    line-height: 2.5rem;
+                }
+            }
         }
-        .modal-body{
+        .modal-body {
             position: relative;
-            .btn-search{
+
+            .btn-search {
                 position: absolute;
                 right: 15px;
-                top:12px;
-                @include media-breakpoint-only(xs){
+                top: 12px;
+
+                @include media-breakpoint-only(xs) {
                     position: relative;
                     right: 0;
                     top: 0;
@@ -81,6 +99,7 @@
         }
     }
 }
+
 // Media Queries
 @include media-breakpoint-down(xl) {
     .site-brand {
@@ -93,20 +112,23 @@
     }
 }
 
-@include media-breakpoint-down(lg){
+@include media-breakpoint-down(lg) {
     .site-navbar {
         .nav-item {
             margin-right: 0;
-            width:100%;
+            width: 100%;
+
             .nav-link {
                 border-bottom: 1px solid rgb(255 255 255 / 30%);
                 margin-bottom: 1rem;
-                &:last-child{
+
+                &:last-child {
                     margin-bottom: 0;
                 }
             }
-            a.btn{
-                width:100%;
+
+            a.btn {
+                width: 100%;
             }
         }
     }
@@ -115,8 +137,7 @@
 
 //media queries
 @include media-breakpoint-only(xs) {
-    .site-navigation{
-        gap:8px;
+    .site-navigation {
+        gap: 8px;
     }
 }
-
