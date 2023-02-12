@@ -12,30 +12,33 @@
         <!-- /Row -->
         <div class="row">
             <div class="col-12 col-sm-12">
-                {{#if (config services)}} 
+                {{#if (config services)}}
                 <div class="services__content swiper" data-swiper>
                     <div class="swiper-wrapper">
                         {{#each services.entries}}
                         <article class="swiper-slide service-article" data-aos="fade-up">
-                            <div class="service-article-card card">
-                                <div class="service-article__img card-img">
-                                    <picture>
-                                        <img class="img-fluid" src="{{ img }}" alt="{{ config.defaultImgAlt }}">
-                                    </picture>
-                                </div>
-                                <div class="service-article__content card-body">
-                                    <div class="service-article__content-heading">
-                                        <picture class="service-article__icon">
-                                            <img class="img-fluid" src="{{ icon }}" alt="{{ config.defaultImgAlt }}">
+                            <a href="services.html" class="article__viewmore">
+                                <div class="service-article-card card">
+                                    <div class="service-article__img card-img">
+                                        <picture>
+                                            <img class="img-fluid" src="{{ img }}" alt="{{ config.defaultImgAlt }}">
                                         </picture>
-                                        <div class="service-article__meta">
-                                            <h5 class="service-article__title">{{title}}</h5>
-                                            <p class="service-article__category">{{category}}</p>
-                                        </div>
                                     </div>
-                                    <a href="services.html" class="article__viewmore"><span class="fas fa-arrow-right"></span></a>
+                                    <div class="service-article__content card-body">
+                                        <div class="service-article__content-heading">
+                                            <picture class="service-article__icon">
+                                                <img class="img-fluid" src="{{ icon }}"
+                                                    alt="{{ config.defaultImgAlt }}">
+                                            </picture>
+                                            <div class="service-article__meta">
+                                                <h5 class="service-article__title">{{title}}</h5>
+                                                <p class="service-article__category">{{category}}</p>
+                                            </div>
+                                        </div>
+                                        <span class="fas fa-arrow-right article_viewmore-icon"></span>
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
                         </article>
                         {{/each}}
                     </div>
